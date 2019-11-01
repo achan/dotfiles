@@ -1,4 +1,5 @@
 export CIRCLE_TOKEN=ab8b25466bee34ebd6ad422fa50afb2c769a95f5
+export LOLCOMMITS_DELAY=3
 
 eval "$(rbenv init -)"
 
@@ -67,3 +68,6 @@ if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
   GIT_PROMPT_ONLY_IN_REPO=1
   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
